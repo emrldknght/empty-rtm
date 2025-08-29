@@ -1,0 +1,24 @@
+/* Global styles or in a CSS file */
+.indexhdrs {
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.indextbls {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	margin: 5px;
+	font-size: 14px;
+}
+
+#champ-info--wrapper > div {
+	margin-bottom: 10px;
+}

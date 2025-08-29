@@ -1,0 +1,47 @@
+.container-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 90vh;
+}
+
+.container {
+	/* background-color: #1b1633; */
+	height: 100%;
+}
+
+.container__up-menu {
+	/*
+    border: none;
+    margin: 2px;
+     */
+}
+
+.container__content {
+	/*
+    border: none;
+    margin: 2px;
+     */
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+
+.lm-fighter-info {
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+		color: #fff;
+	}
+}

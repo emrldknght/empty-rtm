@@ -1,0 +1,349 @@
+.debug {
+  display: none !important;
+}
+// linter
+.href-button {
+  display: inline;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: #bfbfbf;
+}
+
+
+// colors
+$color--chat-message-button-text: #bfbfbf;
+$color-gray-1: #9f9f9f;
+//
+.list-wrapper * {
+  direction: ltr;
+}
+.list-wrapper-item {
+  direction: ltr;
+}
+.list-wrapper {
+  overflow-y: scroll;
+  direction:rtl;
+  /*noinspection CssUnknownProperty*/
+  scrollbar-width: thin;
+}
+.list-wrapper::-webkit-scrollbar {
+  width: 0.2vw;
+  height: min-content;
+  background-color: #b6b6b6;
+}
+.list-wrapper::-webkit-scrollbar-thumb {
+  background: #000;
+}
+.list-wrapper.reset-dir {
+  direction: ltr;
+}
+// \list-wrapper
+
+.paging {
+  display: flex;
+  flex-direction: row;
+  gap: 2px 5px;
+  flex-wrap: wrap;
+  line-height: 14px; // todo - fix
+}
+
+.chat-message-content--text {
+  // linter
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  cursor: pointer;
+  color: $color--chat-message-button-text;
+
+
+}
+a.combat-list-item--id {
+  &-win {
+    color: #005500;
+  }
+  &-lose {
+    color: #550000;
+  }
+}
+
+.fighter-list-counter {
+  font-size:14px;
+  color: $color-gray-1;
+}
+
+.combat-display--team-score {
+  font-size: 32px;
+  color: #9f4c00;
+}
+.complect-button--filled {
+  background-color: #333;
+}
+
+.market-display-item {
+  &--summary {
+    width: 50%;
+    min-width: 298px;
+    color: $color-gray-1;
+  }
+}
+
+.repair-item {
+  color: #9f9f9f
+}
+
+body {
+  // font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-family: initial;
+}
+
+.al-right {
+  text-align: right;
+}
+.al-center {
+  text-align: center;
+}
+.al-left {
+  text-align: left;
+}
+
+table {
+  &.w-100 {
+    width: 100%;
+  }
+  &.cs-0 {
+    border-spacing: 0;
+  }
+  &.cs-2 {
+    border-spacing: 2px;
+  }
+  &.cs-3 {
+    border-spacing: 3px;
+  }
+  &.cp-0 {
+    td {
+      padding: 0;
+    }
+  }
+  &.cp-2 {
+    td {
+      padding: 2px;
+    }
+  }
+  &.cp-3 {
+    td {
+      padding: 3px;
+    }
+  }
+}
+td {
+  &.al-right {
+    text-align: right;
+  }
+  &.al-center {
+    text-align: center;
+  }
+  &.al-left {
+    text-align: left;
+  }
+  &.v-top {
+    vertical-align: top;
+  }
+}
+
+div {
+  border: initial;
+  // margin: initial;
+  // padding: initial;
+}
+
+$common-border: 1px solid $color-gray-1;
+
+.w-border {
+  border: $common-border;
+}
+
+#__nuxt, #nuxt-app-root, #wmfm-app-root {
+  margin: initial;
+  padding: initial;
+}
+
+#container {
+  > div {
+    // border: $common-border;
+    > div {
+      // border: $common-border;
+      > div {
+        // border: $common-border;
+      }
+    }
+  }
+}
+.container-wrapper {
+  border: $common-border;
+  // background-color: rgba(255, 192, 203, .2);
+  // grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: row;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 44px auto;
+  grid-template-areas:
+          'menu-left menu-center menu-right '
+  'content-left content-center content-right'
+;
+  // grid-template-rows: 1fr;
+  .container {
+    overflow: hidden;
+  }
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(255, 192, 203, .2);
+}
+.upleft {
+  grid-area: menu-left;
+}
+.leftdiv {
+  height: initial;
+  width: initial;
+}
+.upcenter {
+  grid-area: menu-center;
+}
+.centerdiv {
+  height: initial;
+  width: initial;
+}
+.upright {
+  grid-area: menu-right;
+}
+.rightdiv {
+  height: initial;
+  width: initial;
+}
+
+.chatswitch {
+  border: $common-border;
+}
+#clubname {
+  border: $common-border;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+#leftcontainer {
+  margin: 0;
+  padding: 0;
+}
+
+.container__up-menu {
+  border: $common-border;
+  > div {
+    border: $common-border;
+    line-height: initial;
+  }
+}
+.container__content {
+  border: $common-border;
+}
+
+div.center {
+  text-align: center;
+}
+
+input[type="button"] {
+  padding: 1px 6px;
+  border: 2px inset;
+  font-size: 14px;
+}
+
+select {
+  color: white;
+  background-color: initial !important;
+  appearance: auto;
+}
+select option {
+  color: black !important;
+  background-color: initial !important;
+}
+
+.tooltip {
+  display: initial;
+}
+
+.combats--show {
+  border: $common-border;
+}
+.cmbshow {
+  display: initial;
+  height: initial;
+}
+
+.mark3 {
+  > div {
+    margin: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    &:nth-child(2n+1) {
+      background: #111; /* Цвет фона */
+    }
+    display: flex;
+    > span {
+      white-space: nowrap;
+    }
+    > span:first-child {
+      flex-grow: 1;
+    }
+  }
+}
+
+.friendly-combats--type {
+  .submenu {
+    flex-grow: 1;
+    text-align: center;
+  }
+  margin-bottom: 4px;
+}
+.friendly-combats--options {
+  label {
+    display: flex;
+    span:first-child {
+      flex-grow: 1;
+    }
+  }
+  select {
+    width: 70px;
+    color: black;
+  }
+  > div {
+    display: flex;
+    > span:first-child {
+        flex-grow: 1;
+    }
+  }
+}
+
+.champ-info--wrapper {
+  > div {
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    width: 582px;
+  }
+}
+
+
+

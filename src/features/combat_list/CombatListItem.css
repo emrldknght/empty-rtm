@@ -1,0 +1,13 @@
+/* combat-list styles */
+.combat-list-item--id {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.combat-list-item--id-win {
+	color: #4caf50; /* Green */
+}
+
+.combat-list-item--id-lose {
+	color: #f44336; /* Red */
+}

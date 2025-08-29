@@ -1,0 +1,123 @@
+.confirm-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+
+    /*    background:url('ie.png'); */
+    // background: linear-gradient(rgba(11, 11, 11, 0.3), rgba(11, 11, 11, 0.6)) repeat-x rgba(11, 11, 11, 0.4);
+    background: linear-gradient(rgb(11 11 11 / 30%), rgb(11 11 11 / 60%)) repeat-x rgb(11 11 11 / 40%);
+
+    /*
+    background: -webkit-gradient(
+            linear,
+            0% 0%,
+            0% 100%,
+            from(rgba(11, 11, 11, 0.3)),
+            to(rgba(11, 11, 11, 0.6))
+    ) repeat-x rgba(11, 11, 11, 0.4);
+     */
+    z-index: 100000;
+}
+
+.confirm-box {
+    background: black;
+    width: 460px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -130px 0 0 -230px;
+    border: 1px solid #9f9f9f;
+
+    /*    -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset; */
+
+    h4 {
+        margin-top: 0;
+        text-align: center;
+        color: #9f9f9f;
+    }
+
+    p {
+        background: none;
+
+        /*    font-size:16px;
+        line-height:1.4; */
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .blue {
+        background-position: left top;
+        text-shadow: 1px 1px 0 #5889a2;
+
+        span {
+            background-position: -195px 0;
+        }
+
+        &:hover {
+            background-position: left bottom;
+
+            span {
+                background-position-y: bottom;
+            }
+        }
+
+
+    }
+
+    .gray {
+        background-position: -200px top;
+        text-shadow: 1px 1px 0 #707070;
+
+        span {
+            background-position: -395px 0;
+        }
+
+        &:hover span {
+            background-position-y: bottom;
+        }
+    }
+
+    @media only screen and (width <= 361px) and (orientation: portrait) {
+        top: 30% !important;
+    }
+
+}
+
+// #confirmBox h1,
+// #confirmBox p {}
+
+.confirm-buttons {
+    border: 0;
+    padding: 15px 0 25px;
+    text-align: center;
+
+    .button {
+        display: inline-block;
+        color: black;
+        position: relative;
+        height: 30px;
+        margin-right: 15px;
+        padding: 0 35px 0 40px;
+
+        /*    text-decoration:none;
+        border:none; */
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+/* #confirmBox .button span{
+    position:absolute;
+    top:0;
+    right:-5px;
+    background:url('buttons.png') no-repeat;
+    width:5px;
+    height:33px
+} */

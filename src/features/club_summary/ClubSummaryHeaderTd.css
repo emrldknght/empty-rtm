@@ -1,0 +1,16 @@
+/* ClubSummaryHeaderTd.css */
+.csh-cell {
+	border: 2px solid transparent;
+}
+
+.csh-active.csh-desc {
+	border-top-color: white;
+}
+
+.csh-active.csh-asc {
+	border-bottom-color: white;
+}
+
+.csh-bold {
+	font-weight: bold;
+}

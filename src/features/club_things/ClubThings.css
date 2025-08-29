@@ -1,0 +1,13 @@
+/* Global styles or in CSS file */
+.trainprogress {
+	height: 14px;
+	overflow: hidden;
+	color: white;
+	line-height: 12px;
+	border-radius: 2px;
+}
+
+.formatclubthings {
+	width: 12.5%; /* 1/8th of table */
+	height: 8px;
+}

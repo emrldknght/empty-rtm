@@ -1,0 +1,47 @@
+/* ClubPremium.css */
+.premium-container {
+	position: relative;
+	display: inline-block;
+	cursor: help; /* Shows tooltip cursor */
+	margin-left: 4px;
+}
+
+.premium-container .premium-tooltip {
+	visibility: hidden;
+	position: absolute;
+	top: 20px; /* Position below the icon */
+	left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+	max-width: 250px;
+	background-color: #000;
+	color: #fff;
+	text-align: left;
+	font-size: 12px;
+	padding: 8px;
+	border-radius: 4px;
+	white-space: nowrap;
+	z-index: 1000;
+
+	/* Fade effect */
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+/* Show tooltip on hover */
+.premium-container:hover .premium-tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Optional: Arrow pointing up */
+.premium-container .premium-tooltip::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #000 transparent;
+}
