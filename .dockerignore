@@ -1,0 +1,33 @@
+# .dockerignore
+node_modules
+.next
+out
+build
+
+# Logs
+npm-debug.log
+yarn-error.log
+*.log
+
+# Env
+.env.local
+.env
+
+# IDE / OS
+.git
+.vscode
+.idea
+.DS_Store
+
+# Don't ignore:
+# yarn.lock ← must be included!
+
+# .dockerignore - dev
+node_modules
+.next
+out
+build
+*.log
+.env.local
+.git
+.DS_Store

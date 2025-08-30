@@ -1,0 +1,19 @@
+# docker-compose.dev.yml
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dev.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules          # Keep container's node_modules
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true
+    # Optional: restart unless stopped
+    # restart: unless-stopped
